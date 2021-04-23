@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Local Meetups</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small"></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a> -->
+      </div>
+    </div>
+    <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a> -->
+</div>
+
+      
+       <!-- <i class="fa fa-download"></i>  --> 
+    </button>
+
+   
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.amevents.com/wp-content/uploads/2018/05/banner-1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>WELCOME</h3>
+      <p><b>to Local Meetups</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.amevents.com/wp-content/uploads/2018/05/banner-1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Let's</h3>
+      <p><b>Bring your event to life</b></p>    
+    </div>
+  </div>
+  <!-- <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div> -->
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Local Meetups</h2>
+    <p class="w3-opacity"><i>Go out and spend some times with friends and families!</i></p>
+    <p class="w3-justify">With this website, you can start creating you own evetns so your friends and family could join. Go ahead and explore. there are so many events out there wating for you to join or be part of. 
+      Don't forget to invite you friends and families to join us. you won't regret spending your great moments with friends and family around you area.
+    </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Please log in!</p>
+   
+ 
+ 
+        <form action="/login" method="POST">
+          <label></label>
+          <input type="text" name="email" placeholder="Email">
+          
+          <label for="password-field" class="sr-only">Password</label>
+          <input type="password"
+             name="password"
+             class="form-control input-lg"
+             placeholder="Password"
+             required>  
+          
+          <input type="submit">
+     </form></button> 
+     <!-- <div align=center><p>Not a member?</p>
+     <form action="/sign_up">
+       <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>   
+     </div> -->
+   </div>
+   <!-- <div>
+      
+       <!-- <i class="fa fa-download"></i>  --> 
+    
+       <div align=center><p>Not a member?</p>
+    <form action="/sign_up">
+      <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>   
+    </div>
+  </div>
+  
+   
+
+  <!-- The Tour Section -->
+
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Events Happening</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16"></h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">This Month</li>
+          <li class="w3-padding-16">Cat Cafe | Las Vegas |3/20/2021| noon </li>
+          <li class="w3-padding-16">Volleyball |Las Vegas |3/25/2021 |2pm </li>
+          <li class="w3-padding-16">Dancing lesson | Las Vegas |3/26/2021 |6pm </li>
+          <li class="w3-padding-16">Outdoor Concert |Las Vegas | 3/27/2021 | 7pm </li>
+          <!-- <li class="w3-padding-16">Dinner |Las Vegas | 3/29/2021 | 7pm </li> -->
+          <li class="w3-padding-16">
+            <h2></h2>
+            <span class="w3-opacity"></span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <form action="/sign_up">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">JOIN</button> 
+            </form>
+          </li>
+        </ul>
+      </div>  
+
+      
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">This Year</li>
+          <li class="w3-padding-16">Yoga session |Las Vegas | 4/15/2021|7am</li>
+          <li class="w3-padding-16">Swimming competition |Las Vegas|5/15/2021|8am</li>
+          <li class="w3-padding-16"></li>
+          <li class="w3-padding-16"></li>
+          <li class="w3-padding-16">
+            <h2></h2>
+            <span class="w3-opacity"></span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <form action="/sign_up">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">JOIN</button> 
+            </form>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  
+      <!-- <div class="w3-container w3-white">
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <form action="/maps">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Create Event</b></button></form></p>
+        
+      
+      </div>  -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ 
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <!doctype html>
+<html>
+<head>
+  <title>Local meetup</title>
+</head>
+<body>
+
+<div align=left>
+  <h1 id="title" style="font-family: 'times new roman', Arial; font-size: 100px; font-style: italic; color: black;">
+  <b><br>Local Meet Ups!</b></h1>  
+
+
+<body><form action="/login">
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Log in
+  </button></form> 
+</body>
+
+<body>
+<form action="/sign_up">
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up
+  </button> 
+</form></body>
+ <body style="background-color: #975555;"> -->
+<!-- </body> 
+
+<body style="background-image: url('http://getwallpapers.com/wallpaper/full/b/c/9/566377.jpg'); background-color: #000000; color: white;">
+</body>
+</body>
+</html>  -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<title>Local Meetups</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('http://getwallpapers.com/wallpaper/full/1/0/3/1084406-download-rose-gold-wallpapers-1242x2208-computer.jpg');
+  
+  min-height: 100%;
+}
+</style>
+<body> -->
+
+<!-- Sidebar with image
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav> -->
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <form action="/sign_up">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a></form>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav> -->
+
+<!-- Page Content -->
+<!-- <div class="w3-main w3-padding-large" style="margin-left:40%"> -->
+
+  <!-- Menu icon to open sidebar -->
+  <!-- <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span> -->
+
+  <!-- Header -->
+  <!-- <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+   
+    <h1 class="w3-jumbo"><b>Local Meetups!</b></h1>:70px;height:70px;">
+     <p>Please log in!</p>
+      
+     -->
+     <!-- <img src="" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <form action="/login" method="POST">
+        <label>Email</label>
+        <input type="text" name="email">
+        
+        <label for="password-field" class="sr-only">Password</label>
+        <input type="password"
+           name="password"
+           class="form-control input-lg"
+           placeholder="Password"
+           required>  
+        
+        <input type="submit">
+  </form>  -->
+      
+       <!-- <i class="fa fa-download"></i>  --> 
+    <!-- </button>
+
+    <p>Not a member?</p>
+    <form action="/sign_up">
+      <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>   
+
+  </header>
+ -->
+
+<!-- 
+
+
+  <-- Portfolio Section -->
+  <!-- <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Events Happening</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16"></h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">This Month</li>
+          <li class="w3-padding-16">Cat Cafe |3/20/2021| Noon </li>
+          <li class="w3-padding-16">Volleyball | 3/25/2021| 2pm</li>
+          <li class="w3-padding-16">Dancing lesson | 3/26/2021 | 6pm</li>
+          <li class="w3-padding-16">Outdoor Concert | 3/27/2021 | 7pm</li>
+          <li class="w3-padding-16">
+            <h2></h2>
+            <span class="w3-opacity"></span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <form action="/sign_up">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button> 
+            </form>
+          </li>
+        </ul>
+      </div> --> 
+<!-- 
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">This Year</li>
+          <li class="w3-padding-16">Yoga session | 4/5/2021 | 7am</li>
+          <li class="w3-padding-16">Swimming competition | 5/15/2021</li>
+          <li class="w3-padding-16"></li>
+          <li class="w3-padding-16"></li>
+          <li class="w3-padding-16">
+            <h2></h2>
+            <span class="w3-opacity"></span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <form action="/sign_up">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button> 
+            </form>
+          </li>
+        </ul>
+      </div> -->
+    <!-- End Grid/Pricing tables -->
+    <!-- </div>
+     -->
+  <!-- End About Section -->
+  <!-- </div> -->
+
+
+  
+
+  <!-- Contact Section -->
+  <!-- <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Events</h2>
+    <hr class="w3-opacity"> -->
+
+
+    <!-- <img src="https://media.giphy.com/media/2sj8u71NhhsGGH02H6/giphy.gif" alt="Computer man" style="width:1000px;height:1000px;"> -->
+    <!-- <img src="https://www.marthascatering.com/uploads/images/Events/Social-Events/Events-Social-15-8.jpg" alt="">
+    <img src="https://www.amevents.com/wp-content/uploads/2018/05/banner-1.jpg" class="w3-opacity w3-hover-opacity-off" alt="Alps" style="width:1000%;max-width:800px" >
+    <img src="http://womenofedm.com/wp-content/uploads/2018/05/img_6975-1024x1024.jpg" class="w3-opacity w3-hover-opacity-off" alt="Alps" style="width:1000%;max-width:800px" >
+    
+    <img src="https://www.marthascatering.com/uploads/images/Events/Social-Events/Events-Social-15-8.jpg" class="w3-opacity w3-hover-opacity-off" alt="Alps" style="width:1000%;max-width:800px" >
+    <img src="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2014/11/cat-cafe.jpg" class="w3-opacity w3-hover-opacity-off" alt="Alps" style="width:1000%;max-width:800px" >
+    <!-- <div class="w3-section"> -->
+      <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> </p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> </p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i></p> -->
+    <!-- </div> -->
+     
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p><img src="https://bestanimations.com/Animals/Birds/bird-animated-gif-9.gif" alt="Computer man" style="width:50px;height:50px;">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section -->
+  <!-- </div>   -->
+  
+  <!-- Footer -->
+  
+<!-- 
+  <div class="w3-container w3-white">
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <form action="/maps">
+        <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Create Event</b></button></form></p>
+        
+      
+      </div>    
+   -->
+  
+  
+<!-- END PAGE CONTENT -->
+<!-- </div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+
+
+</html> -->
+
+ 
+
+
+
+
+
+
+

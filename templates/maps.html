@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<title>Google maps</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Contact</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Log out</a>
+    </div>
+  </div>
+</div>
+<head>
+  <title>MAP </title>
+  <h1></h1>
+  <body>
+   
+  
+  <!-- </body> -->
+  
+  <script src='./index.js.'></script></script>
+  <style type="text/css">
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      
+      width: 100%; height: 90%; position:fixed; text-align:center;
+      width: 70%; height: 100%; margin:0px auto; display:inline-block
+    }
+    
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 50;
+      padding: 0;
+    }
+  </style>
+  <script>
+    function initMap() {
+      // create a get request to a server route that gives us a list of event objects
+      // loop over each one with corresponding lat and lng for each event
+      // create a new marker depending on that lat/lng
+    
+      const myLatLng1 = { lat: 36.063965, lng: -115.172241};
+const myLatLng2 = { lat: 36.147335, lng: -115.159708};
+const myLatLng3 = { lat: 36.103411, lng: -115.120877 };
+const myLatLng4 = { lat: 36.170700, lng: -115.144020 };
+const myLatLng5 = { lat: 36.151451, lng: -115.249032 };
+
+const map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 4,
+  center: myLatLng1,
+});
+console.log(myLatLng1)
+const marker1  = new google.maps.Marker({
+  position: myLatLng1,
+  map,
+  title: "Cat Cafe, Las Vegas,3/20/2021, noon, No dogs!",
+
+});
+new google.maps.Marker({
+  position: myLatLng2,
+  map,
+  title: "Volleyball, Las Vegas,3.25/2021, 2pm, workout gear necessary!",
+
+});
+new google.maps.Marker({
+  position: myLatLng3,
+  map,
+  title: "Dance Lesson, Las Vegas, 3/26/2021, 6pm, bring heels!",
+
+});
+new google.maps.Marker({
+  position: myLatLng4,
+  map,
+  title: "Outdoor Concert, Las Vegas 3/27/2021, 7pm, bring mask!",
+
+});
+new google.maps.Marker({
+  position: myLatLng5,
+  map,
+  title: "Potluck Picnic, Las Vegas, 3/28/2021, noon, bring food!", 
+});
+
+
+}
+
+
+</script>
+</head>
+<body>
+<div id="map"></div> 
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0tLA9lQo38M9fY6ojgrImR4Lc0KjFZik&callback=initMap&libraries=&v=weekly"></script> 
+<!-- Content -->
+<div class="w3-content" style="max-width:10000px;margin-top:200px;margin-bottom:200px">
+<!-- 
+ 
+
+  <!-- Grid -->
+   <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h1>CREATE YOUR EVENT</h1>
+      <p></p>
+    </div>
+    <h1></h1>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Share</li>
+        <a href="default.asp">
+          <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+        <li class="w3-padding-16"><b></b> twitter</li>
+        <a href="default.asp">
+          <img src="https://www.giveashare.com/blog/wp-content/uploads/2012/01/facebook-logo1.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+        <li class="w3-padding-16"><b></b>facebook</li>
+        <a href="default.asp">
+          <img src="https://wie.ieee.org/wp-content/uploads/2019/06/instagram-Logo-PNG-Transparent-Background-download-768x768.png" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+        <li class="w3-padding-16"><b></b>Instagram</li>
+        <a href="default.asp">
+          <img src="https://marketingland.com/wp-content/ml-loads/2014/07/pinterest-logo-white-1920.png" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+        <li class="w3-padding-16"><b></b>Pinterest</li>
+        
+      
+      </ul>
+    </div> 
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Events</h4>
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-padding">
+                <h4></h4>
+              </div>
+              <ul class="w3-ul w3-hoverable w3-white">
+                <li class="w3-padding-16">
+                  <img src="https://www.unionvilletimes.com/wp-content/uploads/2014/10/volleyball-300x298.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">Volleyball</span><br>
+                  <span>Location: Las Vegas Date: 3/25/2021 Time: 2pm Limitations: Workout gear neccesary!</span>
+                </li>
+                
+                <li class="w3-padding-16">
+                  <img src="http://www.thewhistlernews.com/wp-content/uploads/2012/08/IMG_0847.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">Outdooor Concert</span><br>
+                  <span>Location: Las Vegas Date: 3/27/2021 Time: 7pm Limitations: Bring Mask!</span>
+                </li> 
+                <li class="w3-padding-16">
+                  <img src="https://i.pinimg.com/originals/3e/3f/06/3e3f06e73235242152b6b5857b1f6c2c.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">PotLuck Picnic</span><br>
+                  <span>Location: Las Vegas Date: 3/28/2021 Time: noon Limitations: Bring Food!</span>
+                </li>   
+                <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                  <img src="https://www.hdnicewallpapers.com/Walls/Big/Cat/Beautiful_Angry_Kitten.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">Cat Cafe</span><br>
+                  <span>Location: Las Vegas Date: 3/20/2021 Time: noon Limitations: No dogs!</span>
+                </li>  
+                <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                  <img src="https://hipsdontlie.ca/wp-content/uploads/2017/02/latin-dance-classes.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                  <span class="w3-large">Dance Lesson</span><br>
+                  <span>Location: Las Vegas Date: 3/26/2021 Time: 6pm Limitations: Bring heels!</span>
+                </li>
+              </ul>
+            </div>
+            
+        <hr> 
+      </ul>
+    </div> 
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <div align=right-top>
+          <h3>Fill out information below</h3>
+          <form action="/maps", method="POST">
+            <input type="text" name="event_name" placeholder="Name of event">
+           
+            <div class="form-group">
+            <input type="text" name="event_date" placeholder="Date" ></div>
+            
+            <input type="text" name="event_time" placeholder="Time">
+            <div class="form-group">
+            <input type="text" name="event_location" placeholder="Location"></div>
+            
+            <input type="text" name="event_limitations"placeholder="Limitations" >
+          
+            <div class="form-group">
+            <input type="submit"></div>
+          
+          </form></div>
+          
+              
+          <h1>CREATE YOUR EVENT!</h1>
+                      <form action="/maps", method="POST">
+                       
+                             
+                                <input type="name" name="name" placeholder="Name of event" required class="form-control">
+                            
+                          
+                        
+                          <div class="form-group">
+                            
+                                <input type="date" name="date" placeholder="Date" required class="form-control">
+                            
+                          </div>
+                          <div class="form-group">
+                            
+                            <input type="time" name="Time" placeholder="Time" required class="form-control">
+                        
+                      </div>
+          
+                         <div class="form-group">
+                            
+                                <input type="location" name="location" placeholder="Location" required class="form-control">
+                            
+                          </div>
+                          <div class="form-group">
+                            
+                            <input type="limitation" name="limitation" placeholder="Limitation" required class="form-control">
+                        
+                      </div>
+                          
+                          </div>
+                        
+                          <div class="form-group">
+                            <input type="submit" value="Create event" class="btn btn-secondary">
+                          </div>
+                  </div> -->
+          
+           <ul class="w3-ul w3-hoverable w3-white">
+                {% for event in all_events %}
+                <li class="w3-padding-16">
+                <span class="w3-large"> {{event.event_name}} </span><br>
+                <span>Location: {{event.location }} Date: {{event.date}} Time: {{event.time}}</span>
+                   
+                 
+              </li> 
+                                    
+                                  
+                                    
+                
+                {% endfor %}
+                </ul> 
+              </body>
+              </html> -->
+              
+          
+
+
+
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    The div element for the map --> 
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+    <!-- The div element for the map -->
+    <!-- <div id="map"></div>  -->
+
+     <!-- Async script executes immediately and must be after any DOM elements used in callback. --> 
+     <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0tLA9lQo38M9fY6ojgrImR4Lc0KjFZik&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script> src="/map.js"</script>
+  </body>
+</html>  --> 
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>MAP </title>
+    <h1></h1>
+    <body>
+     
+    
+    <!-- </body> -->
+    
+    <!-- <script src='./index.js.'></script></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        
+        height: 50%;
+        width: 50%;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 50;
+        padding: 0;
+      }
+    </style>
+    <script>
+      function initMap() {
+        // create a get request to a server route that gives us a list of event objects
+        // loop over each one with corresponding lat and lng for each event
+        // create a new marker depending on that lat/lng
+      
+        const myLatLng1 = { lat: 36.063965, lng: -115.172241};
+  const myLatLng2 = { lat: 36.147335, lng: -115.159708};
+  const myLatLng3 = { lat: 36.103411, lng: -115.120877 };
+  const myLatLng4 = { lat: 36.170700, lng: -115.144020 };
+  const myLatLng5 = { lat: 36.151451, lng: -115.249032 };
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng1,
+  });
+  console.log(myLatLng1)
+  const marker1  = new google.maps.Marker({
+    position: myLatLng1,
+    map,
+    title: "Cat Cafe, Las Vegas,3/20/2021, noon, No dogs!",
+ 
+ });
+new google.maps.Marker({
+    position: myLatLng2,
+    map,
+    title: "Volleyball, Las Vegas,3.25/2021, 2pm, workout gear necessary!",
+ 
+ });
+ new google.maps.Marker({
+    position: myLatLng3,
+    map,
+    title: "Dance Lesson, Las Vegas, 3/26/2021, 6pm, bring heels!",
+ 
+ });
+ new google.maps.Marker({
+    position: myLatLng4,
+    map,
+    title: "Outdoor Concert, Las Vegas 3/27/2021, 7pm, bring mask!",
+ 
+ });
+ new google.maps.Marker({
+    position: myLatLng5,
+    map,
+    title: "Potluck Picnic, Las Vegas, 3/28/2021, noon, bring food!", 
+ });
+
+ 
+}
+  
+
+</script>  -->
+<!-- </head>
+<body>
+<div id="map"></div>  -->
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0tLA9lQo38M9fY6ojgrImR4Lc0KjFZik&callback=initMap&libraries=&v=weekly"></script>  -->
+
+<!-- <body>Create your event</body> --> 
+ <!-- <form action="/maps", method="POST">
+  name ? <input type="text" name="event_name">
+
+  Date ? <input type="text" name="event_date">
+  
+  Time ? <input type="text" name="event_time">
+  
+  location ? <input type="text" name="event_location">
+  
+  Limitations ? <input type="text" name="event_limitations">
+
+ 
+  <input type="submit">
+
+</form>  -->
+<!-- <div align=right-top>
+<h1>CREATE YOUR EVENT!</h1>
+<form action="/maps", method="POST">
+  <input type="text" name="event_name" placeholder="Name of event">
+ 
+  <div class="form-group">
+  <input type="text" name="event_date" placeholder="Date" ></div>
+  
+  <input type="text" name="event_time" placeholder="Time">
+  <div class="form-group">
+  <input type="text" name="event_location" placeholder="Location"></div>
+  
+  <input type="text" name="event_limitations"placeholder="Limitations" >
+
+  <div class="form-group">
+  <input type="submit"></div>
+
+</form></div> -->
+
+<!--     
+<h1>CREATE YOUR EVENT!</h1>
+            <form action="/maps", method="POST">
+             
+                   
+                      <input type="name" name="name" placeholder="Name of event" required class="form-control">
+                  
+                
+              
+                <div class="form-group">
+                  
+                      <input type="date" name="date" placeholder="Date" required class="form-control">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <input type="time" name="Time" placeholder="Time" required class="form-control">
+              
+            </div>
+
+               <div class="form-group">
+                  
+                      <input type="location" name="location" placeholder="Location" required class="form-control">
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <input type="limitation" name="limitation" placeholder="Limitation" required class="form-control">
+              
+            </div>
+                
+                </div>
+              
+                <div class="form-group">
+                  <input type="submit" value="Create event" class="btn btn-secondary">
+                </div>
+        </div> -->
+
+<!-- <ul class="w3-ul w3-hoverable w3-white">
+      {% for event in all_events %}
+      <li class="w3-padding-16">
+      <span class="w3-large"> {{event.event_name}} </span><br>
+      <span>Location: {{event.location }} Date: {{event.date}} Time: {{event.time}}</span>
+         
+       
+    </li> 
+                          
+                        
+                          
+      
+      {% endfor %}
+      </ul> 
+    </body>
+    </html> -->
+<!--     
+      <div class="w3-card w3-margin">
+        <div class="w3-container w3-padding">
+          <h4>Events</h4>
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h4></h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+                <img src="https://www.unionvilletimes.com/wp-content/uploads/2014/10/volleyball-300x298.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Volleyball</span><br>
+                <span>Location: Las Vegas Date: 3/25/2021 Time: 2pm Limitations: Workout gear neccesary!</span>
+              </li>
+              
+              <li class="w3-padding-16">
+                <img src="http://www.thewhistlernews.com/wp-content/uploads/2012/08/IMG_0847.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Outdooor Concert</span><br>
+                <span>Location: Las Vegas Date: 3/27/2021 Time: 7pm Limitations: Bring Mask!</span>
+              </li> 
+              <li class="w3-padding-16">
+                <img src="https://i.pinimg.com/originals/3e/3f/06/3e3f06e73235242152b6b5857b1f6c2c.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">PotLuck Picnic</span><br>
+                <span>Location: Las Vegas Date: 3/28/2021 Time: noon Limitations: Bring Food!</span>
+              </li>   
+              <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                <img src="https://www.hdnicewallpapers.com/Walls/Big/Cat/Beautiful_Angry_Kitten.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Cat Cafe</span><br>
+                <span>Location: Las Vegas Date: 3/20/2021 Time: noon Limitations: No dogs!</span>
+              </li>  
+              <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+                <img src="https://hipsdontlie.ca/wp-content/uploads/2017/02/latin-dance-classes.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Dance Lesson</span><br>
+                <span>Location: Las Vegas Date: 3/26/2021 Time: 6pm Limitations: Bring heels!</span>
+              </li>
+            </ul>
+          </div>
+           -->
+      <!-- <hr> 
+      <table>
+         -->
+<!-- 
+      <style>
+      body{
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #484749; color: white;
+      }</style>  -->
+
+
+ 
+  
+
+
